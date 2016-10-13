@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.class_matter_sam2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="장비 물자 분류 현황"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewActivity"
+            android:label="작성" />
+        <activity
+            android:name=".ReadActivity"
+            android:label="상세정보" />
+        <activity
+            android:name=".ListActivity"
+            android:label="현재 장비 목록" />
+        <activity
+            android:name=".BorrowActivity"
+            android:label="대여 목록" />
+        <activity
+            android:name=".BrokenActivity"
+            android:label="장비 이상 목록" />
+        <activity android:name=".ImageViewActivity"
+                   android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+    </application>
+
+</manifest>
